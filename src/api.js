@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000', // Your backend URL
+  baseURL: 'https://todo-backend-4vff.onrender.com', // Your backend URL
 });
 
 export const register = (data) => api.post('/auth/register', data);
